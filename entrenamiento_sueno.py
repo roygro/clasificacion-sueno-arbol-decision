@@ -2,15 +2,6 @@
 # ACTIVIDAD 2: ÁRBOL DE DECISIÓN - RIESGO DE INSOMNIO
 # Dataset propio de hábitos de sueño (creación propia)
 # ============================================================
-# Cumple con los 7 puntos solicitados en el anexo:
-# 1) Generación de datos (evidenciada en generar_dataset_sueno.py)
-# 2) Entrenamiento del algoritmo
-# 3) Evidencia del entrenamiento
-# 4) Análisis y justificación de resultados
-# 5) Evidencia con datos de prueba (nuevos, no del dataset)
-# 6) Análisis y justificación de esos resultados
-# 7) Gráficas (incluye PCA)
-# ============================================================
 
 import pandas as pd
 import numpy as np
@@ -209,16 +200,6 @@ for i, (pred, proba) in enumerate(zip(predicciones, probabilidades)):
     for j, clase in enumerate(nombres_clases):
         print(f"   Probabilidad '{clase}': {proba[j]:.2%}")
 
-# ============================================================
-# PUNTO 6. ANÁLISIS Y JUSTIFICACIÓN DE RESULTADOS (casos nuevos)
-# ============================================================
-print("\n" + "="*60)
-print("PUNTO 6: ANÁLISIS DE LOS CASOS DE PRUEBA")
-print("="*60)
-print("Ver análisis narrativo en el documento PDF: se espera que el Caso A")
-print("(hábitos saludables) sea clasificado con bajo riesgo, el Caso B")
-print("(hábitos de riesgo) con alto riesgo, y el Caso C (hábitos mixtos)")
-print("sea el más incierto, con probabilidades más cercanas al 50/50.")
 
 # ============================================================
 # PUNTO 7. GRÁFICAS - PROCESAMIENTO PCA
